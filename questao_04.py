@@ -32,7 +32,7 @@ quadrado_dif_Y = [dy**2 for dy in dif_Y]
 
 r = sum(prod_diferencas) / np.sqrt(sum(quadrado_dif_X)*sum(quadrado_dif_Y))
 
-print(f"\nQuestão 04 - Item (a) \nCoeficiente de Correlação de Pearson (r): {r:.4f}\n")
+print(f"\nQuestão 04 - Item (a) \nCoeficiente de Correlação de Pearson (r): {r:.4f}")
 
 ######################### ITEM B
 # Y = a + bX
@@ -61,7 +61,7 @@ plt.legend()
 plt.grid()
 
 plt.show() #mostrar o gráfico
-print(f"Questão 04 - Item (b)\nGráfico - Ajuste de Regressão Linear Simples e Quadrática\n")
+print(f"\nQuestão 04 - Item (b)\nRepresentação gráfica do modelo de ajuste da regressão linear simples e quadrática da massa muscular em relação a idade (em anos) em uma amostra de 30 indivíduos")
 
 ######################### ITEM C
 
@@ -83,7 +83,7 @@ R2_quad = 1 - (SS_res_quad / SS_tot)
 p_quad = 2 # é o nº de parâmetros no modelo quadrático (incluindo o intercepto)
 R2_ajustado_quad = 1 - ((1 - R2_quad) * (n - 1)) / (n - p_quad - 1)
 
-print("Questão 04 - Item (c)")
+print("\nQuestão 04 - Item (c)")
 print(f"Coeficiente de determinação Linear: {R2_linear:.4f}")
 print(f"Coeficiente de determinação Linear ajustado: {R2_ajustado_linear:.4f}")
 print(f"Coeficiente de determinação quadrático: {R2_quad:.4f}")
@@ -91,6 +91,6 @@ print(f"Coeficiente de determinação quadrático ajustado: {R2_ajustado_quad:.4
 
 ######################### ITEM D
 
-
-
-
+#O mais indicado é usar o modelo de regressão linear simples, pois o coeficiente de determinação ajustado é maior,
+print("\nQuestão 04 - Item (d)")
+print("A diferença entre os coeficientes de determinação ajustado dos dois modelos é bem pequena. Portanto o modelo de regressão linear simples melhor se ajusta aos dados. Apenas se o coeficiente de determinação do modelo quadrático fosse significantemente maior, se ajustaria melhor, indicando melhor a variabilidade dos dados.")
